@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHS CHC Eligibility Checker UK 2026 | Free Continuing Healthcare Quiz</title>
+<meta name="description" content="Free 10-question NHS Continuing Healthcare eligibility quiz for UK families. Find out if you should request a CHC assessment for your elderly parent. Based on the 2022 National Framework.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://caretoolkit.co.uk/nhs-chc-eligibility-quiz/">
+
+<meta property="og:title" content="NHS CHC Eligibility Checker UK 2026">
+<meta property="og:description" content="Free 10-question quiz to check if you should request an NHS Continuing Healthcare assessment for your elderly parent.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caretoolkit.co.uk/nhs-chc-eligibility-quiz/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+
+<!-- GOOGLE SEARCH CONSOLE VERIFICATION - paste verification meta tag here when you have it -->
+<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NHS CHC Eligibility Checker",
+  "description": "Free quiz to estimate whether to request an NHS Continuing Healthcare assessment, based on the 2022 National Framework for England.",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is NHS Continuing Healthcare means-tested?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. NHS CHC is completely separate from the local authority means test. It is awarded based on the nature, intensity, complexity and unpredictability of someone's health needs, regardless of their savings, income or property. If awarded, the NHS funds the full cost of care in any setting." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the NHS CHC Checklist and Decision Support Tool?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Checklist is a short screening tool that decides whether someone should be referred for a full assessment. The Decision Support Tool (DST) is the full assessment, completed by a multidisciplinary team across 12 care domains. Only the DST can determine eligibility — the Checklist just opens the door." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the NHS CHC assessment process take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The NHS National Framework sets a 28-day target from referral to eligibility decision. In practice it often takes longer. If the ICB exceeds 28 days without good reason, care costs from day 29 onwards can be reclaimed." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between CHC and NHS-funded Nursing Care?",
+      "acceptedAnswer": { "@type": "Answer", "text": "NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a much smaller flat-rate weekly contribution toward registered nursing in a nursing home, paid when someone is not eligible for full CHC but still needs nursing input." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this quiz apply to Wales, Scotland or Northern Ireland?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. NHS Continuing Healthcare is an England-only scheme. Wales has its own Continuing NHS Healthcare framework, Scotland has Hospital Based Complex Clinical Care, and Northern Ireland has separate continuing healthcare arrangements through HSC Trusts. The eligibility rules are different in each nation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I appeal an NHS CHC decision?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. First request a local resolution review from the Integrated Care Board (ICB). If unresolved, escalate to NHS England for an Independent Review Panel. Final escalation is to the Parliamentary and Health Service Ombudsman. Many initially-refused cases are overturned at the review stage." }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/shared.css">
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="site-header">
+  <a href="/" class="brand-link">
+    <div class="brand">Care Toolkit</div>
+    <div class="brand-sub">Free tools for families navigating elderly care in the UK</div>
+  </a>
+  <nav class="site-nav">
+    <a href="/care-home-cost-calculator/">Care Cost Calculator</a>
+    <a href="/nhs-chc-eligibility-quiz/">NHS CHC Checker</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<main>
+<span class="year-tag">Based on the 2022 NHS National Framework</span>
+<h1>NHS Continuing Healthcare Eligibility Checker</h1>
+<p class="intro">Answer 10 quick questions about your parent's care needs to find out whether it's worth requesting an NHS Continuing Healthcare (CHC) assessment. Free, anonymous, no sign-up.</p>
+
+<div class="disclaimer" style="margin-top: 16px; margin-bottom: 8px;">
+  <strong>England only:</strong> NHS Continuing Healthcare is an England-only scheme. If your parent lives in Wales, Scotland or Northern Ireland the rules and the name of the scheme are different and this quiz will not give accurate guidance.
+</div>
+
+<!-- AD SLOT: top of quiz. Switch on after AdSense approval. -->
+<div class="ad-slot">Ad slot (top)</div>
+
+<section class="calc" aria-label="NHS CHC eligibility quiz">
+
+  <p style="font-size: 14px; color: var(--ink-soft); margin-bottom: 24px;">For each question, pick the answer that <strong>best describes your parent right now</strong>. If you're unsure between two options, pick the higher one — the official assessment also accounts for fluctuating needs.</p>
+
+  <div class="field">
+    <label for="q1">1. How does your parent breathe? <span class="hint">— Breathing domain</span></label>
+    <select id="q1" data-domain="breathing">
+      <option value="">Select an answer…</option>
+      <option value="N">Breathes normally — no breathing problems</option>
+      <option value="M">Occasional breathlessness on exertion (stairs, walking) but copes day-to-day</option>
+      <option value="H">Needs daily breathing support (inhalers, nebuliser, oxygen) and gets distressed if missed</option>
+      <option value="P">Severe breathing difficulties needing constant or frequent skilled help; can become life-threatening</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q2">2. How does your parent manage eating and drinking? <span class="hint">— Nutrition domain</span></label>
+    <select id="q2" data-domain="nutrition">
+      <option value="">Select an answer…</option>
+      <option value="N">Eats and drinks independently with no concerns</option>
+      <option value="M">Needs encouragement, modified-texture food, or has minor swallowing issues</option>
+      <option value="H">Needs help with most meals; significant weight loss or dehydration risk; assessed as choking risk</option>
+      <option value="S">Cannot eat orally / has a PEG or NG tube / repeated aspiration / severe malnutrition</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q3">3. How is your parent's continence (bladder and bowel)? <span class="hint">— Continence domain</span></label>
+    <select id="q3" data-domain="continence">
+      <option value="">Select an answer…</option>
+      <option value="N">Continent of bladder and bowel</option>
+      <option value="L">Occasional accidents; manages with pads independently</option>
+      <option value="M">Frequent incontinence; needs help with pads, toileting, or skin care</option>
+      <option value="H">Doubly incontinent with complex management (catheter, stoma, severe constipation, recurring UTIs)</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q4">4. Does your parent have skin or pressure-area problems? <span class="hint">— Skin and tissue viability domain</span></label>
+    <select id="q4" data-domain="skin">
+      <option value="">Select an answer…</option>
+      <option value="N">Skin intact and healthy</option>
+      <option value="M">At risk of pressure damage; needs daily checking; uses pressure-relieving cushion or mattress</option>
+      <option value="H">Has a pressure ulcer, leg ulcer or fragile skin needing dressings several times a week</option>
+      <option value="S">Multiple or grade 3/4 pressure ulcers, complex wound care, or skin breakdown that won't heal</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q5">5. How mobile is your parent? <span class="hint">— Mobility domain</span></label>
+    <select id="q5" data-domain="mobility">
+      <option value="">Select an answer…</option>
+      <option value="N">Walks independently or with a stick; no falls</option>
+      <option value="M">Uses a frame or wheelchair; needs help to transfer; some falls risk</option>
+      <option value="H">Bed-bound or hoist-dependent; needs two people for any transfer; high falls risk</option>
+      <option value="S">Completely immobile; needs full positional changes to prevent harm; constant injury risk</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q6">6. How well can your parent communicate their needs? <span class="hint">— Communication domain</span></label>
+    <select id="q6" data-domain="communication">
+      <option value="">Select an answer…</option>
+      <option value="N">Communicates clearly and understands others</option>
+      <option value="L">Some difficulty with words or hearing but copes with patience</option>
+      <option value="M">Significant difficulty being understood; needs prompts, pictures, or familiar people to interpret</option>
+      <option value="H">Cannot reliably communicate basic needs (pain, hunger, distress); risk of needs going unnoticed</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q7">7. Does your parent show distress, anxiety, depression or mood disturbance? <span class="hint">— Psychological &amp; emotional needs</span></label>
+    <select id="q7" data-domain="psych">
+      <option value="">Select an answer…</option>
+      <option value="N">Generally settled; no significant distress</option>
+      <option value="L">Occasional low mood or anxiety; manageable</option>
+      <option value="M">Frequent distress, anxiety or low mood; needs daily reassurance or carer input</option>
+      <option value="H">Severe persistent distress or depression affecting daily life; risk of self-harm or refusing essential care</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q8">8. How is your parent's memory and decision-making? <span class="hint">— Cognition domain</span></label>
+    <select id="q8" data-domain="cognition">
+      <option value="">Select an answer…</option>
+      <option value="N">No significant memory problems; makes own decisions</option>
+      <option value="M">Mild memory loss; needs prompts but can follow routine</option>
+      <option value="H">Significant cognitive impairment (dementia, brain injury); cannot manage own safety; supervision needed for most activities</option>
+      <option value="S">Severe cognitive impairment; no capacity for any decisions about care, finances or safety; constant supervision required</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q9">9. Does your parent show challenging or risky behaviour? <span class="hint">— Behaviour domain</span></label>
+    <select id="q9" data-domain="behaviour">
+      <option value="">Select an answer…</option>
+      <option value="N">No challenging behaviour</option>
+      <option value="M">Occasional agitation, wandering or refusal of care; manageable with familiar approach</option>
+      <option value="H">Frequent behaviour putting self or others at risk (aggression, persistent wandering, refusing essential care)</option>
+      <option value="P">Severe, frequent, unpredictable behaviour requiring specialist intervention (1:1 supervision, restraint protocols, mental health crisis input)</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="q10">10. Does your parent need complex medication or experience seizures / loss of consciousness? <span class="hint">— Drug therapies + Altered states</span></label>
+    <select id="q10" data-domain="meds">
+      <option value="">Select an answer…</option>
+      <option value="N">Standard medication taken reliably; no episodes of unconsciousness</option>
+      <option value="M">Multiple medications needing prompting; rare or well-controlled episodes (e.g. controlled epilepsy)</option>
+      <option value="H">Complex regimen needing nurse-level oversight (syringe driver, frequent PRN, IV antibiotics) OR recurring seizures or fainting episodes</option>
+      <option value="P">Highly complex symptom-control regimen (palliative-style, frequent dose changes) OR frequent severe altered consciousness with injury risk</option>
+    </select>
+  </div>
+
+  <div style="margin-top: 24px;">
+    <button class="btn" id="checkBtn" type="button">See result</button>
+    <span id="progress" style="margin-left: 12px; font-size: 14px; color: var(--ink-soft);">0 of 10 answered</span>
+  </div>
+
+  <div class="results" id="results" aria-live="polite" style="display:none;">
+    <div class="result-headline">
+      <span class="result-label">Recommendation</span>
+      <span class="result-value" id="headline">—</span>
+    </div>
+    <div class="status" id="explanation"></div>
+    <div class="result-row" style="margin-top: 16px;">
+      <span class="result-label">Priority-level needs</span>
+      <span class="result-value" id="countP" style="font-size: 18px;">0</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Severe-level needs</span>
+      <span class="result-value" id="countS" style="font-size: 18px;">0</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">High-level needs</span>
+      <span class="result-value" id="countH" style="font-size: 18px;">0</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Moderate-level needs</span>
+      <span class="result-value" id="countM" style="font-size: 18px;">0</span>
+    </div>
+    <div id="nextSteps" style="margin-top: 20px;"></div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> This quiz gives a guide only. It is not a clinical assessment and cannot determine NHS CHC eligibility. Only a multidisciplinary team using the official Decision Support Tool can do that. If your parent has any significant health needs, you can request a Checklist screening from their GP, district nurse, hospital ward (especially before discharge), social worker, or the local <a href="https://www.england.nhs.uk/contact-us/" target="_blank" rel="noopener" style="color:var(--accent-warm);">Integrated Care Board</a>.
+  </div>
+</section>
+
+<!-- AD SLOT: mid-content. Switch on after AdSense approval. -->
+<div class="ad-slot">Ad slot (mid)</div>
+
+<h2>What is NHS Continuing Healthcare?</h2>
+<p>NHS Continuing Healthcare (CHC) is a package of care that the NHS pays for in full when an adult is assessed as having a <strong>"primary health need"</strong>. Unlike local authority social care, it is <strong>not means-tested</strong> — your parent's savings, income and property are irrelevant. If they qualify, the NHS pays for the entire care package, whether at home, in a care home or in a nursing home.</p>
+<p>CHC is funded and arranged by the local <strong>Integrated Care Board (ICB)</strong>, which replaced Clinical Commissioning Groups (CCGs) under the Health and Care Act 2022. The rules are set out in the national <em>Framework for NHS Continuing Healthcare and NHS-funded Nursing Care</em>, last revised in July 2022.</p>
+
+<h2>Who is eligible? The "primary health need" test</h2>
+<p>Eligibility doesn't depend on a single diagnosis. It depends on whether the person's overall care needs are <strong>primarily about health</strong>, rather than primarily about social care. The National Framework uses four characteristics — taken together — to identify a primary health need:</p>
+<ul>
+  <li><strong>Nature</strong> — the type of needs and the kind of intervention required to manage them.</li>
+  <li><strong>Intensity</strong> — the extent and severity of the needs and how much support is required.</li>
+  <li><strong>Complexity</strong> — how the needs interact and the level of skill required to manage them.</li>
+  <li><strong>Unpredictability</strong> — how much the needs fluctuate, and the risk if care is not provided promptly.</li>
+</ul>
+<p>If the cumulative picture across these four shows a level of need that goes beyond what a local authority can lawfully provide, the NHS becomes responsible.</p>
+
+<h2>The assessment process: Checklist → Decision Support Tool → ICB decision</h2>
+<p>There are two stages.</p>
+<p><strong>1. The Checklist (screening).</strong> This is a short tool completed by any trained health or social care professional — most often a GP, community nurse, hospital discharge team or social worker. It rates each care domain as <strong>A</strong>, <strong>B</strong> or <strong>C</strong>. A referral for full assessment is required if the person scores 2 or more A's, 5 or more B's, 1 A + 4 B's, or any single A in a "priority" box. The Checklist is a low bar — it is meant to filter out only the people with clearly minimal needs.</p>
+<p><strong>2. The Decision Support Tool (DST).</strong> If the Checklist is positive, a multidisciplinary team (MDT) of at least two professionals from different healthcare disciplines completes the full DST. They score the person across <strong>12 care domains</strong>: breathing; nutrition; continence; skin and tissue viability; mobility; communication; psychological and emotional needs; cognition; behaviour; drug therapies and medication; altered states of consciousness; and other significant care needs. Each domain is rated as no needs, low, moderate, high, severe or priority — though not every domain has every level available.</p>
+<p><strong>3. The eligibility rule.</strong> A clear recommendation of eligibility is expected where there is <em>either</em> a "priority" level need in any of the four domains that carry that level (breathing, behaviour, drug therapies, altered states of consciousness), <em>or</em> two or more "severe" needs across all domains. Eligibility may also be indicated by combinations of one severe with several highs, or many high or moderate scores — but those cases require professional judgement by the MDT.</p>
+<p><strong>4. The ICB decision.</strong> The MDT makes a recommendation; the Integrated Care Board makes the final decision and "should usually accept" the MDT's recommendation. The whole process from referral to decision should normally take no more than <strong>28 calendar days</strong>.</p>
+
+<h2>Common reasons CHC applications fail</h2>
+<p>The Parliamentary and Health Service Ombudsman has repeatedly flagged similar themes in upheld CHC complaints. The most common pitfalls:</p>
+<ul>
+  <li><strong>Checklist scores not supported by the medical record.</strong> Under-scoring at screening stage means the person never reaches a full DST. Always check the Checklist scores against your parent's actual care notes and challenge anything that looks low.</li>
+  <li><strong>Care plans not produced or not reflecting the real picture.</strong> Without a written care plan that captures the daily reality, the MDT has nothing concrete to assess.</li>
+  <li><strong>"Well-managed needs" being scored down.</strong> A need that is currently controlled by skilled care is still a need. The framework is clear that needs should be assessed as they would be without that intervention.</li>
+  <li><strong>MDT not properly convened.</strong> The DST requires at least two professionals from different healthcare disciplines. Decisions made by a single assessor or by professionals from only one discipline can be challenged.</li>
+  <li><strong>Family not consulted.</strong> Families have a right to attend the DST meeting and submit evidence. Push back if you are excluded.</li>
+</ul>
+
+<h2>How to request a Checklist</h2>
+<p>You don't need a special form. Ask any of the following:</p>
+<ul>
+  <li>Your parent's <strong>GP</strong> — particularly useful if you've noticed a recent decline.</li>
+  <li>The <strong>hospital ward or discharge team</strong> if your parent is in hospital — this is the strongest moment to request screening, before discharge planning concludes.</li>
+  <li>The <strong>district nurse or community matron</strong> if one is involved.</li>
+  <li>The <strong>social worker</strong> if one has been allocated.</li>
+  <li>The <strong>local ICB's CHC team</strong> directly — search "[your area] ICB continuing healthcare" online.</li>
+</ul>
+<p>If a Checklist has been done before and your parent's needs have since worsened, you can request a fresh one. There is no limit on how many times a Checklist can be completed.</p>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+  <summary>Is NHS Continuing Healthcare means-tested?</summary>
+  <p>No. NHS CHC is completely separate from the local authority means test. It is awarded based on the nature, intensity, complexity and unpredictability of someone's health needs, regardless of their savings, income or property. If awarded, the NHS funds the full cost of care in any setting.</p>
+</details>
+
+<details>
+  <summary>What is the NHS CHC Checklist and Decision Support Tool?</summary>
+  <p>The Checklist is a short screening tool that decides whether someone should be referred for a full assessment. The Decision Support Tool (DST) is the full assessment, completed by a multidisciplinary team across 12 care domains. Only the DST can determine eligibility — the Checklist just opens the door.</p>
+</details>
+
+<details>
+  <summary>How long does the NHS CHC assessment process take?</summary>
+  <p>The NHS National Framework sets a 28-day target from referral to eligibility decision. In practice it often takes longer. If the ICB exceeds 28 days without good reason, care costs from day 29 onwards can be reclaimed.</p>
+</details>
+
+<details>
+  <summary>What is the difference between CHC and NHS-funded Nursing Care?</summary>
+  <p>NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a much smaller flat-rate weekly contribution toward registered nursing in a nursing home, paid when someone is not eligible for full CHC but still needs nursing input.</p>
+</details>
+
+<details>
+  <summary>Does this quiz apply to Wales, Scotland or Northern Ireland?</summary>
+  <p>No. NHS Continuing Healthcare is an England-only scheme. Wales has its own Continuing NHS Healthcare framework, Scotland has Hospital Based Complex Clinical Care, and Northern Ireland has separate continuing healthcare arrangements through HSC Trusts. The eligibility rules are different in each nation.</p>
+</details>
+
+<details>
+  <summary>Can I appeal an NHS CHC decision?</summary>
+  <p>Yes. First request a local resolution review from the Integrated Care Board (ICB). If unresolved, escalate to NHS England for an Independent Review Panel. Final escalation is to the Parliamentary and Health Service Ombudsman. Many initially-refused cases are overturned at the review stage.</p>
+</details>
+
+<details>
+  <summary>What is Fast Track CHC?</summary>
+  <p>Fast Track is a separate route for people with a rapidly deteriorating condition that may be entering a terminal phase. A clinician completes the Fast Track tool and the ICB should arrange care normally within 48 hours. No Checklist or DST is needed.</p>
+</details>
+
+<aside class="related">
+  <h3>Other tools you might need</h3>
+  <ul>
+    <li><a href="/care-home-cost-calculator/">Care Home Cost Calculator</a> — estimate weekly fees and council contribution under the 2026/27 means test</li>
+    <li>Attendance Allowance eligibility checker <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Power of Attorney checklist <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Medication schedule builder <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+  </ul>
+</aside>
+
+<p class="last-updated">Last updated: May 2026. Sources: NHS Continuing Healthcare Decision Support Tool guidance (gov.uk); National Framework for NHS Continuing Healthcare and NHS-funded Nursing Care, July 2022 (gov.uk); NHS Continuing Healthcare Checklist guidance (gov.uk); NHS.uk public information; Parliamentary and Health Service Ombudsman reports.</p>
+
+</main>
+
+<footer class="site-footer">
+  <p>Care Toolkit provides general information, not financial, legal or clinical advice. Always seek professional guidance before making decisions about a parent's care or finances.</p>
+  <div class="footer-links">
+    <a href="/about/">About</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</div>
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-banner-inner">
+    <p>We use cookies to analyse site traffic and serve relevant ads. You can accept or reject these — only essential cookies are used otherwise. <a href="/privacy/">Read our privacy policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn reject" id="cookie-reject">Reject</button>
+      <button class="cookie-btn accept" id="cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/shared.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  const QUESTION_IDS = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10'];
+
+  function getAnswers() {
+    return QUESTION_IDS.map(id => document.getElementById(id).value);
+  }
+
+  function updateProgress() {
+    const answered = getAnswers().filter(v => v !== '').length;
+    document.getElementById('progress').textContent = answered + ' of 10 answered';
+  }
+
+  function classify(answers) {
+    let counts = { N:0, L:0, M:0, H:0, S:0, P:0 };
+    for (const a of answers) {
+      if (counts.hasOwnProperty(a)) counts[a]++;
+    }
+
+    let level, headline, explanation, nextSteps;
+
+    if (counts.P >= 1 || counts.S >= 2) {
+      level = 'high';
+      headline = 'Request a CHC Checklist now';
+      explanation = '<strong>Your answers point to one or more high-severity needs that meet the official trigger for an NHS CHC assessment.</strong> The National Framework specifies that a clear recommendation of eligibility is expected where there is either a "Priority" level need in any of the four priority-bearing domains (breathing, behaviour, drug therapies, altered states of consciousness), or two or more "Severe" level needs across all domains. Your parent appears to meet at least one of those triggers.';
+      nextSteps = '<strong>What to do today:</strong><ul><li>Contact your parent\'s GP, district nurse, hospital discharge team or social worker and ask them to complete an <strong>NHS CHC Checklist</strong>.</li><li>If your parent is in hospital, do this <em>before</em> they are discharged — it is much harder to start the process from home.</li><li>Keep written notes of the request, including the date and who you spoke to.</li><li>If no one will complete a Checklist within 2 weeks, contact the local <strong>Integrated Care Board (ICB)</strong> CHC team directly.</li></ul>';
+    } else if (counts.S >= 1 || counts.H >= 2 || (counts.M >= 3 && counts.H >= 1)) {
+      level = 'medium';
+      headline = 'Worth requesting a CHC Checklist';
+      explanation = '<strong>Your answers show a meaningful level of care need.</strong> You may not have hit the automatic eligibility triggers, but the National Framework explicitly notes that eligibility may also be indicated by one severe need combined with needs in several other domains, or by a number of high or moderate scores together. Cases like this are decided by professional judgement at the multidisciplinary team meeting — and the only way to find out is to be screened.';
+      nextSteps = '<strong>What to do this week:</strong><ul><li>Ask your parent\'s GP, community nurse or social worker to complete an <strong>NHS CHC Checklist</strong>.</li><li>Before the screening, write down a short summary of your parent\'s daily care needs — especially the parts that fluctuate or are unpredictable.</li><li>Bring evidence: care plans, medication lists, hospital letters, recent falls or incidents.</li><li>If the Checklist is negative but your parent\'s needs worsen, you can request another one — there is no limit.</li></ul>';
+    } else {
+      level = 'low';
+      headline = 'Unlikely to qualify on these answers';
+      explanation = '<strong>Based on your answers, your parent does not appear to meet the threshold for NHS Continuing Healthcare.</strong> CHC is intended for people whose needs are primarily about health rather than social care, and where those needs are intense, complex or unpredictable enough to go beyond what a local authority can provide. That said, if you are unsure, or if your parent\'s health declines, it is always reasonable to request a Checklist — the bar to be screened is low.';
+      nextSteps = '<strong>Other support to look into:</strong><ul><li>The <a href="/care-home-cost-calculator/">UK Care Home Cost Calculator</a> if you are facing care home fees and want to understand the means test.</li><li><strong>Attendance Allowance</strong> — non-means-tested, worth up to £110.40 per week in 2026 for someone with significant care needs at home.</li><li><strong>NHS-funded Nursing Care (FNC)</strong> — a flat-rate NHS contribution if your parent is in a nursing home but not eligible for full CHC.</li><li>Free guidance from <a href="https://www.ageuk.org.uk" target="_blank" rel="noopener">Age UK</a> or <a href="https://www.carersuk.org" target="_blank" rel="noopener">Carers UK</a>.</li></ul>';
+    }
+
+    return { level, headline, explanation, nextSteps, counts };
+  }
+
+  function showResult() {
+    const answers = getAnswers();
+    if (answers.some(v => v === '')) {
+      alert('Please answer all 10 questions before checking the result.');
+      const firstUnanswered = QUESTION_IDS.find(id => document.getElementById(id).value === '');
+      if (firstUnanswered) {
+        document.getElementById(firstUnanswered).focus();
+        document.getElementById(firstUnanswered).scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return;
+    }
+
+    const result = classify(answers);
+    const headlineEl = document.getElementById('headline');
+    headlineEl.textContent = result.headline;
+
+    const headlineWrap = headlineEl.closest('.result-headline');
+    if (result.level === 'high') {
+      headlineWrap.style.background = 'rgba(184, 85, 46, 0.12)';
+      headlineEl.style.color = 'var(--accent-warm)';
+    } else if (result.level === 'medium') {
+      headlineWrap.style.background = 'var(--highlight)';
+      headlineEl.style.color = 'var(--accent)';
+    } else {
+      headlineWrap.style.background = 'rgba(0,0,0,0.04)';
+      headlineEl.style.color = 'var(--ink)';
+    }
+
+    document.getElementById('explanation').innerHTML = result.explanation;
+    document.getElementById('countP').textContent = result.counts.P;
+    document.getElementById('countS').textContent = result.counts.S;
+    document.getElementById('countH').textContent = result.counts.H;
+    document.getElementById('countM').textContent = result.counts.M;
+    document.getElementById('nextSteps').innerHTML = result.nextSteps;
+
+    const resultsEl = document.getElementById('results');
+    resultsEl.style.display = 'block';
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    QUESTION_IDS.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('change', updateProgress);
+    });
+    const btn = document.getElementById('checkBtn');
+    if (btn) btn.addEventListener('click', showResult);
+    updateProgress();
+  });
+})();
+</script>
+</body>
+</html>
