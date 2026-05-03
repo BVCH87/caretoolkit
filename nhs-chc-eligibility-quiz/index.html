@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NHS CHC Eligibility Checker UK 2026 | Free Continuing Healthcare Quiz</title>
-<meta name="description" content="Free 10-question NHS Continuing Healthcare eligibility quiz for UK families. Find out if you should request a CHC assessment for your elderly parent. Based on the 2022 National Framework.">
+<meta name="description" content="Free 10-question NHS Continuing Healthcare eligibility quiz for UK families. Find out if you should request a CHC assessment for your elderly parent. Reviewed by a UK care-sector professional. Based on the 2022 National Framework.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://caretoolkit.co.uk/nhs-chc-eligibility-quiz/">
 
@@ -26,7 +26,12 @@
   "description": "Free quiz to estimate whether to request an NHS Continuing Healthcare assessment, based on the 2022 National Framework for England.",
   "applicationCategory": "HealthApplication",
   "operatingSystem": "Any",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Hinesh Patel",
+    "description": "Over a decade of experience in the UK care sector"
+  }
 }
 </script>
 <script type="application/ld+json">
@@ -52,7 +57,7 @@
     {
       "@type": "Question",
       "name": "What is the difference between CHC and NHS-funded Nursing Care?",
-      "acceptedAnswer": { "@type": "Answer", "text": "NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a much smaller flat-rate weekly contribution toward registered nursing in a nursing home, paid when someone is not eligible for full CHC but still needs nursing input." }
+      "acceptedAnswer": { "@type": "Answer", "text": "NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a smaller flat-rate weekly contribution toward registered nursing in a nursing home — £267.68 per week (2026/27 standard rate in England) — paid when someone is not eligible for full CHC but still needs nursing input." }
     },
     {
       "@type": "Question",
@@ -63,6 +68,21 @@
       "@type": "Question",
       "name": "Can I appeal an NHS CHC decision?",
       "acceptedAnswer": { "@type": "Answer", "text": "Yes. First request a local resolution review from the Integrated Care Board (ICB). If unresolved, escalate to NHS England for an Independent Review Panel. Final escalation is to the Parliamentary and Health Service Ombudsman. Many initially-refused cases are overturned at the review stage." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Fast Track CHC?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Fast Track is a separate route for people with a rapidly deteriorating condition that may be entering a terminal phase. A clinician completes the Fast Track tool and the ICB should arrange care normally within 48 hours. No Checklist or DST is needed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my parent have CHC and pay for top-ups?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If your parent is eligible for CHC, the NHS must fund the full assessed care package — there should be no top-up. In practice, families sometimes pay third-party top-ups for additional comforts (a private room, particular home of choice). This is permitted, but the NHS should never refuse to fund what your parent's assessed needs require. Push back if a CHC package is being framed as 'CHC plus a required top-up'." }
+    },
+    {
+      "@type": "Question",
+      "name": "What evidence should I gather before the CHC assessment?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bring: GP records and recent letters; hospital discharge summary if applicable; medication list including PRN/as-needed drugs; care plan from the current care provider; daily care logs from the last 3 months if available; falls/incidents log; district nurse visit notes; family observations of the unpredictable, fluctuating, or distressing aspects of care that staff might not see in a single visit. The MDT can only score what they can see evidenced — your job is to make the picture complete." }
     }
   ]
 }
@@ -93,7 +113,7 @@
 <main>
 <span class="year-tag">Based on the 2022 NHS National Framework</span>
 <h1>NHS Continuing Healthcare Eligibility Checker</h1>
-<p class="intro">Answer 10 quick questions about your parent's care needs to find out whether it's worth requesting an NHS Continuing Healthcare (CHC) assessment. Free, anonymous, no sign-up.</p>
+<p class="intro">Answer 10 quick questions about your parent's care needs to find out whether it's worth requesting an NHS Continuing Healthcare (CHC) assessment. Free, anonymous, no sign-up. Built and reviewed by a UK care-sector professional.</p>
 
 <div class="disclaimer" style="margin-top: 16px; margin-bottom: 8px;">
   <strong>England only:</strong> NHS Continuing Healthcare is an England-only scheme. If your parent lives in Wales, Scotland or Northern Ireland the rules and the name of the scheme are different and this quiz will not give accurate guidance.
@@ -251,12 +271,32 @@
   </div>
 </section>
 
+<div class="worked-example">
+  <h4>Worked example: Robert, 79, vascular dementia + recurring infections</h4>
+  <p>Robert is 79. He has vascular dementia, is doubly incontinent, and has had three chest infections in the past six months requiring district-nurse antibiotic visits. He has fallen twice in the last month and is now bed-bound, requiring two carers and a hoist for every transfer. He recognises his daughter but can't reliably tell carers when he's in pain.</p>
+  <p>His daughter completes the quiz on Robert's behalf. Here's how his answers map:</p>
+  <ul>
+    <li><strong>Breathing:</strong> Moderate (occasional breathlessness from infections) → M</li>
+    <li><strong>Nutrition:</strong> Moderate (needs help with meals) → M</li>
+    <li><strong>Continence:</strong> High (doubly incontinent, complex management) → <strong>H</strong></li>
+    <li><strong>Skin:</strong> Moderate (at risk; uses pressure mattress) → M</li>
+    <li><strong>Mobility:</strong> High (hoist-dependent, two-carer transfers) → <strong>H</strong></li>
+    <li><strong>Communication:</strong> Low (some difficulty but copes with familiar people) → L</li>
+    <li><strong>Psych &amp; emotional:</strong> Moderate (frequent distress with infections) → M</li>
+    <li><strong>Cognition:</strong> High (significant dementia, no safety awareness) → <strong>H</strong></li>
+    <li><strong>Behaviour:</strong> Moderate (occasional agitation) → M</li>
+    <li><strong>Drugs / altered states:</strong> High (recurring antibiotic visits, IV input) → <strong>H</strong></li>
+  </ul>
+  <p>Counts: 0 Priority, 0 Severe, <strong>4 High</strong>, 5 Moderate, 1 Low.</p>
+  <div class="we-result"><strong>Result: "Worth requesting a CHC Checklist."</strong> Robert doesn't hit the automatic-eligibility triggers (1+ Priority or 2+ Severe). But the National Framework explicitly says combinations like "a number of domains with High and/or Moderate needs" can also indicate a primary health need — the multidisciplinary team must judge holistically. Cases like Robert's are exactly why families should push for a Checklist rather than self-rule out.</div>
+</div>
+
 <!-- AD SLOT: mid-content. Switch on after AdSense approval. -->
 <div class="ad-slot">Ad slot (mid)</div>
 
 <h2>What is NHS Continuing Healthcare?</h2>
 <p>NHS Continuing Healthcare (CHC) is a package of care that the NHS pays for in full when an adult is assessed as having a <strong>"primary health need"</strong>. Unlike local authority social care, it is <strong>not means-tested</strong> — your parent's savings, income and property are irrelevant. If they qualify, the NHS pays for the entire care package, whether at home, in a care home or in a nursing home.</p>
-<p>CHC is funded and arranged by the local <strong>Integrated Care Board (ICB)</strong>, which replaced Clinical Commissioning Groups (CCGs) under the Health and Care Act 2022. The rules are set out in the national <em>Framework for NHS Continuing Healthcare and NHS-funded Nursing Care</em>, last revised in July 2022.</p>
+<p>CHC is funded and arranged by the local <strong>Integrated Care Board (ICB)</strong>, which replaced Clinical Commissioning Groups (CCGs) under the Health and Care Act 2022. The rules are set out in the <a class="body-cite" href="https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care" target="_blank" rel="noopener">National Framework for NHS Continuing Healthcare and NHS-funded Nursing Care</a>, last revised in July 2022 (with corrections in July 2023).</p>
 
 <h2>Who is eligible? The "primary health need" test</h2>
 <p>Eligibility doesn't depend on a single diagnosis. It depends on whether the person's overall care needs are <strong>primarily about health</strong>, rather than primarily about social care. The National Framework uses four characteristics — taken together — to identify a primary health need:</p>
@@ -270,8 +310,8 @@
 
 <h2>The assessment process: Checklist → Decision Support Tool → ICB decision</h2>
 <p>There are two stages.</p>
-<p><strong>1. The Checklist (screening).</strong> This is a short tool completed by any trained health or social care professional — most often a GP, community nurse, hospital discharge team or social worker. It rates each care domain as <strong>A</strong>, <strong>B</strong> or <strong>C</strong>. A referral for full assessment is required if the person scores 2 or more A's, 5 or more B's, 1 A + 4 B's, or any single A in a "priority" box. The Checklist is a low bar — it is meant to filter out only the people with clearly minimal needs.</p>
-<p><strong>2. The Decision Support Tool (DST).</strong> If the Checklist is positive, a multidisciplinary team (MDT) of at least two professionals from different healthcare disciplines completes the full DST. They score the person across <strong>12 care domains</strong>: breathing; nutrition; continence; skin and tissue viability; mobility; communication; psychological and emotional needs; cognition; behaviour; drug therapies and medication; altered states of consciousness; and other significant care needs. Each domain is rated as no needs, low, moderate, high, severe or priority — though not every domain has every level available.</p>
+<p><strong>1. The Checklist (screening).</strong> This is a short tool completed by any trained health or social care professional — most often a GP, community nurse, hospital discharge team or social worker. It rates each care domain as <strong>A</strong>, <strong>B</strong> or <strong>C</strong>. Per the <a class="body-cite" href="https://www.gov.uk/government/publications/nhs-continuing-healthcare-checklist/nhs-continuing-healthcare-checklist-guidance" target="_blank" rel="noopener">official Checklist guidance on gov.uk</a>, a referral for full assessment is required if the person scores 2 or more A's, 5 or more B's, 1 A + 4 B's, or any single A in a "priority" box (the asterisked rows). The Checklist is a low bar — it is meant to filter out only the people with clearly minimal needs.</p>
+<p><strong>2. The Decision Support Tool (DST).</strong> If the Checklist is positive, a multidisciplinary team (MDT) of at least two professionals from different healthcare disciplines completes the full <a class="body-cite" href="https://www.gov.uk/government/publications/nhs-continuing-healthcare-decision-support-tool/nhs-continuing-healthcare-decision-support-tool-guidance" target="_blank" rel="noopener">DST</a>. They score the person across <strong>12 care domains</strong>: breathing; nutrition; continence; skin and tissue viability; mobility; communication; psychological and emotional needs; cognition; behaviour; drug therapies and medication; altered states of consciousness; and other significant care needs. Each domain is rated as no needs, low, moderate, high, severe or priority — though not every domain has every level available.</p>
 <p><strong>3. The eligibility rule.</strong> A clear recommendation of eligibility is expected where there is <em>either</em> a "priority" level need in any of the four domains that carry that level (breathing, behaviour, drug therapies, altered states of consciousness), <em>or</em> two or more "severe" needs across all domains. Eligibility may also be indicated by combinations of one severe with several highs, or many high or moderate scores — but those cases require professional judgement by the MDT.</p>
 <p><strong>4. The ICB decision.</strong> The MDT makes a recommendation; the Integrated Care Board makes the final decision and "should usually accept" the MDT's recommendation. The whole process from referral to decision should normally take no more than <strong>28 calendar days</strong>.</p>
 
@@ -296,6 +336,41 @@
 </ul>
 <p>If a Checklist has been done before and your parent's needs have since worsened, you can request a fresh one. There is no limit on how many times a Checklist can be completed.</p>
 
+<h2>How this checker works (methodology)</h2>
+<div class="methodology">
+  <p>This checker mirrors the official scoring rule in the National Framework's Decision Support Tool, applied to a 10-question summary covering all 12 care domains:</p>
+  <ol>
+    <li>Each question maps to one domain (with question 10 covering both Drug therapies and Altered states of consciousness).</li>
+    <li>Each answer option is graded N (no needs), L (low), M (moderate), H (high), S (severe), or P (priority) — but only the levels that domain actually has in the official Framework. For example, Continence and Communication have no "Severe" level; Altered states of consciousness has no "Severe" but does have "Priority".</li>
+    <li>The recommendation engine applies the official rules: <strong>1+ Priority</strong> in any of the four priority-bearing domains <em>or</em> <strong>2+ Severes</strong> across all domains triggers "Request a Checklist now". Combinations that "may indicate" eligibility (1 Severe + multiple Highs, or several Highs and Moderates) trigger "Worth requesting". Anything below that triggers "Unlikely on these answers".</li>
+    <li>The output language is deliberately probabilistic — only an MDT can determine actual eligibility. A real DST also considers Nature, Intensity, Complexity and Unpredictability holistically, not just severity counts.</li>
+  </ol>
+</div>
+
+<h2>How to use this checker</h2>
+<ol>
+  <li><strong>Pick the answer that best describes your parent right now.</strong> If their needs fluctuate, pick the higher option — the official assessment also accounts for unpredictability.</li>
+  <li><strong>Be honest about "well-managed" needs.</strong> If your parent currently has no pressure ulcers because skilled carers turn them every two hours, that's still a high-level skin need — score it as H, not N.</li>
+  <li><strong>Answer all 10 questions</strong> then click "See result".</li>
+  <li><strong>Read the result and the next-steps box.</strong> If the result says "Request a Checklist now" or "Worth requesting", screenshot or print the page and bring it to the GP or social worker as evidence of your concerns.</li>
+</ol>
+
+<h2>What's NOT included in this checker</h2>
+<ul>
+  <li><strong>Clinical assessment.</strong> This is a self-assessment based on a non-clinician's observations. It cannot replace the official DST, which is completed by a multidisciplinary team with access to medical records.</li>
+  <li><strong>The Checklist itself.</strong> This checker simulates the DST scoring rules, not the Checklist's A/B/C scoring. Only a trained professional can complete the official Checklist.</li>
+  <li><strong>Fast Track route.</strong> If your parent's condition is rapidly deteriorating and may be entering a terminal phase, ask immediately about <strong>Fast Track CHC</strong> — a separate accelerated route that bypasses the Checklist and DST.</li>
+  <li><strong>Devolved nations.</strong> NHS CHC is England-only. Wales, Scotland and Northern Ireland have separate (and different) schemes.</li>
+  <li><strong>Cost calculations.</strong> If you don't qualify for CHC, use our <a href="/care-home-cost-calculator/">UK Care Home Cost Calculator</a> to estimate what care will cost under the means-tested system.</li>
+  <li><strong>Appeals process.</strong> If your parent has been refused CHC, you can appeal — first to the ICB, then to NHS England, then to the Parliamentary Ombudsman. We don't currently have a dedicated appeals tool.</li>
+</ul>
+
+<div class="trust-block">
+  <strong>Why trust this checker</strong>
+  <p>The questions, answer options, and scoring rules in this tool are mapped directly to the official 2022 National Framework for NHS Continuing Healthcare and NHS-funded Nursing Care, the published Decision Support Tool guidance, and the Checklist guidance — all linked inline above so you can verify. The methodology section explains exactly how answers map to recommendations.</p>
+  <p>The checker is reviewed by Hinesh Patel, owner-operator of Birkdale Village Care Home, with over a decade of UK care-sector experience including direct involvement in CHC Checklists, DST assessments, and appeals on behalf of residents and families. The tool is updated whenever the official Framework or DST guidance is revised.</p>
+</div>
+
 <h2>Frequently asked questions</h2>
 
 <details>
@@ -315,7 +390,7 @@
 
 <details>
   <summary>What is the difference between CHC and NHS-funded Nursing Care?</summary>
-  <p>NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a much smaller flat-rate weekly contribution toward registered nursing in a nursing home, paid when someone is not eligible for full CHC but still needs nursing input.</p>
+  <p>NHS Continuing Healthcare covers the full cost of care for people with a primary health need. NHS-funded Nursing Care (FNC) is a smaller flat-rate weekly contribution toward registered nursing in a nursing home — £267.68 per week (2026/27 standard rate in England) — paid when someone is not eligible for full CHC but still needs nursing input.</p>
 </details>
 
 <details>
@@ -333,21 +408,47 @@
   <p>Fast Track is a separate route for people with a rapidly deteriorating condition that may be entering a terminal phase. A clinician completes the Fast Track tool and the ICB should arrange care normally within 48 hours. No Checklist or DST is needed.</p>
 </details>
 
+<details>
+  <summary>Can my parent have CHC and pay for top-ups?</summary>
+  <p>If your parent is eligible for CHC, the NHS must fund the full assessed care package — there should be no top-up. In practice, families sometimes pay third-party top-ups for additional comforts (a private room in a particular home of choice, extra trips out). This is permitted, but the NHS should never refuse to fund what your parent's assessed needs require. Push back firmly if a CHC package is being framed as "CHC plus a required top-up" — that's not how the Framework works.</p>
+</details>
+
+<details>
+  <summary>What evidence should I gather before the CHC assessment?</summary>
+  <p>Bring: GP records and recent letters; hospital discharge summary if applicable; medication list including PRN/as-needed drugs; care plan from the current care provider; daily care logs from the last three months if available; falls and incidents log; district nurse visit notes; family observations of the unpredictable, fluctuating, or distressing aspects of care that staff might not see in a single visit. The MDT can only score what they can see evidenced — your job is to make the picture complete.</p>
+</details>
+
+<div class="reviewed-by">
+  <span class="reviewer-name">Reviewed by Hinesh Patel</span>, with over a decade of experience in the UK care sector.
+  <div class="review-dates">Last reviewed: May 2026 · Next review due: May 2027</div>
+</div>
+
 <aside class="related">
   <h3>Other tools you might need</h3>
   <ul>
-    <li><a href="/care-home-cost-calculator/">Care Home Cost Calculator</a> — estimate weekly fees and council contribution under the 2026/27 means test</li>
+    <li><a href="/care-home-cost-calculator/">UK Care Home Cost Calculator</a> — estimate weekly fees and council contribution under the 2026/27 means test</li>
     <li>Attendance Allowance eligibility checker <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Carer's Allowance checker <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
     <li>Power of Attorney checklist <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
-    <li>Medication schedule builder <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
   </ul>
 </aside>
 
-<p class="last-updated">Last updated: May 2026. Sources: NHS Continuing Healthcare Decision Support Tool guidance (gov.uk); National Framework for NHS Continuing Healthcare and NHS-funded Nursing Care, July 2022 (gov.uk); NHS Continuing Healthcare Checklist guidance (gov.uk); NHS.uk public information; Parliamentary and Health Service Ombudsman reports.</p>
+<p class="last-updated">Last updated: May 2026. Sources: <a class="body-cite" href="https://www.gov.uk/government/publications/nhs-continuing-healthcare-decision-support-tool/nhs-continuing-healthcare-decision-support-tool-guidance" target="_blank" rel="noopener">NHS CHC Decision Support Tool guidance (gov.uk)</a>; <a class="body-cite" href="https://www.gov.uk/government/publications/national-framework-for-nhs-continuing-healthcare-and-nhs-funded-nursing-care" target="_blank" rel="noopener">National Framework for NHS Continuing Healthcare and NHS-funded Nursing Care, July 2022 (gov.uk)</a>; <a class="body-cite" href="https://www.gov.uk/government/publications/nhs-continuing-healthcare-checklist/nhs-continuing-healthcare-checklist-guidance" target="_blank" rel="noopener">NHS CHC Checklist guidance (gov.uk)</a>; <a class="body-cite" href="https://www.nhs.uk/social-care-and-support/money-work-and-benefits/nhs-continuing-healthcare/" target="_blank" rel="noopener">NHS.uk public information</a>; Parliamentary and Health Service Ombudsman reports.</p>
 
 </main>
 
 <footer class="site-footer">
+  <div class="popular-tools-footer">
+    <h4>Free UK care planning tools</h4>
+    <ul>
+      <li><a href="/care-home-cost-calculator/">Care Home Cost Calculator</a></li>
+      <li><a href="/nhs-chc-eligibility-quiz/">NHS CHC Eligibility Checker</a></li>
+      <li class="pt-coming">Attendance Allowance Checker — coming soon</li>
+      <li class="pt-coming">Power of Attorney Checklist — coming soon</li>
+      <li class="pt-coming">Carer's Allowance Checker — coming soon</li>
+      <li class="pt-coming">Medication Schedule Builder — coming soon</li>
+    </ul>
+  </div>
   <p>Care Toolkit provides general information, not financial, legal or clinical advice. Always seek professional guidance before making decisions about a parent's care or finances.</p>
   <div class="footer-links">
     <a href="/about/">About</a>
@@ -406,7 +507,7 @@
       level = 'low';
       headline = 'Unlikely to qualify on these answers';
       explanation = '<strong>Based on your answers, your parent does not appear to meet the threshold for NHS Continuing Healthcare.</strong> CHC is intended for people whose needs are primarily about health rather than social care, and where those needs are intense, complex or unpredictable enough to go beyond what a local authority can provide. That said, if you are unsure, or if your parent\'s health declines, it is always reasonable to request a Checklist — the bar to be screened is low.';
-      nextSteps = '<strong>Other support to look into:</strong><ul><li>The <a href="/care-home-cost-calculator/">UK Care Home Cost Calculator</a> if you are facing care home fees and want to understand the means test.</li><li><strong>Attendance Allowance</strong> — non-means-tested, worth up to £110.40 per week in 2026 for someone with significant care needs at home.</li><li><strong>NHS-funded Nursing Care (FNC)</strong> — a flat-rate NHS contribution if your parent is in a nursing home but not eligible for full CHC.</li><li>Free guidance from <a href="https://www.ageuk.org.uk" target="_blank" rel="noopener">Age UK</a> or <a href="https://www.carersuk.org" target="_blank" rel="noopener">Carers UK</a>.</li></ul>';
+      nextSteps = '<strong>Other support to look into:</strong><ul><li>The <a href="/care-home-cost-calculator/">UK Care Home Cost Calculator</a> if you are facing care home fees and want to understand the means test.</li><li><strong>Attendance Allowance</strong> — non-means-tested, worth £76.70 lower or £114.60 higher per week in 2026/27 for someone with significant care needs at home.</li><li><strong>NHS-funded Nursing Care (FNC)</strong> — a flat NHS contribution of £267.68/week if your parent is in a nursing home but not eligible for full CHC.</li><li>Free guidance from <a href="https://www.ageuk.org.uk" target="_blank" rel="noopener">Age UK</a> or <a href="https://www.carersuk.org" target="_blank" rel="noopener">Carers UK</a>.</li></ul>';
     }
 
     return { level, headline, explanation, nextSteps, counts };

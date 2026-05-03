@@ -143,3 +143,39 @@ footer.site-footer a:hover { text-decoration: underline; }
 .btn:hover { background: #234a40; }
 
 .last-updated { font-size: 13px; color: var(--ink-soft); font-style: italic; margin-top: 24px; }
+
+/* Popular tools footer block (sitewide) */
+.popular-tools-footer { margin-bottom: 32px; padding: 20px 24px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 8px; }
+.popular-tools-footer h4 { font-family: 'Fraunces', Georgia, serif; font-size: 16px; font-weight: 600; margin: 0 0 12px; color: var(--ink); }
+.popular-tools-footer ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.popular-tools-footer li { margin: 0; font-size: 14px; }
+.popular-tools-footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.popular-tools-footer a:hover { text-decoration: underline; }
+.popular-tools-footer .pt-coming { color: var(--ink-soft); font-style: italic; }
+
+/* Why trust this calculator block */
+.trust-block { margin: 40px 0 16px; padding: 18px 20px; background: var(--highlight); border-left: 3px solid var(--accent); border-radius: 6px; font-size: 15px; color: var(--ink-soft); }
+.trust-block strong { display: block; font-family: 'Fraunces', Georgia, serif; color: var(--ink); font-size: 17px; margin-bottom: 6px; font-weight: 600; }
+.trust-block p { color: var(--ink-soft); margin: 0 0 8px; }
+.trust-block p:last-child { margin-bottom: 0; }
+
+/* Reviewed-by panel */
+.reviewed-by { margin-top: 32px; padding: 16px 20px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; font-size: 14px; color: var(--ink-soft); }
+.reviewed-by .reviewer-name { color: var(--ink); font-weight: 600; }
+.reviewed-by .review-dates { margin-top: 4px; font-size: 13px; color: var(--ink-soft); }
+
+/* Worked example callout */
+.worked-example { margin: 24px 0; padding: 20px 22px; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--accent-warm); border-radius: 6px; }
+.worked-example h4 { font-family: 'Fraunces', Georgia, serif; font-size: 17px; font-weight: 600; color: var(--ink); margin: 0 0 10px; }
+.worked-example p { margin-bottom: 10px; }
+.worked-example p:last-child { margin-bottom: 0; }
+.worked-example .we-result { margin-top: 12px; padding: 10px 14px; background: var(--highlight); border-radius: 4px; font-size: 14px; color: var(--ink); }
+
+/* Methodology / how-to / what's-not-included sections */
+.methodology { margin-top: 24px; padding: 20px 22px; background: var(--bg-card); border: 1px solid var(--line); border-radius: 6px; }
+.methodology h3 { margin-top: 0; }
+.methodology ol, .methodology ul { padding-left: 22px; }
+
+/* Inline source citation links (subtle, lighter colour) */
+.body-cite { color: var(--accent); text-decoration: underline; text-decoration-color: rgba(45,93,80,0.35); text-underline-offset: 2px; }
+.body-cite:hover { text-decoration-color: var(--accent); }
