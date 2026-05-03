@@ -9,18 +9,17 @@
 
   function loadAdsAndAnalytics() {
     // ============================================================
-    // GOOGLE ANALYTICS 4 - replace G-XXXXXXXXXX with your real ID
+    // GOOGLE ANALYTICS 4 — Care Toolkit Measurement ID
+    // Loads only after the user clicks "Accept" on the cookie banner.
     // ============================================================
-    /*
     const gaScript = document.createElement('script');
     gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-85REE7RS5Y';
     document.head.appendChild(gaScript);
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
-    */
+    gtag('config', 'G-85REE7RS5Y', { anonymize_ip: true });
 
     // ============================================================
     // GOOGLE ADSENSE - replace ca-pub-XXXXXXXXXXXXXXXX with your real publisher ID
