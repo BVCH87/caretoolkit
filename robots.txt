@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caretoolkit.co.uk/sitemap.xml

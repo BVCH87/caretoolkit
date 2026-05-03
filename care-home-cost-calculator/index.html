@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Home Cost Calculator UK 2026 | Estimate Care Fees & Council Funding</title>
+<meta name="description" content="Free UK care home cost calculator. Estimate weekly and annual care fees, plus how much your local council might contribute based on the 2026/27 means test rules.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://caretoolkit.co.uk/care-home-cost-calculator/">
+
+<meta property="og:title" content="Care Home Cost Calculator UK 2026">
+<meta property="og:description" content="Estimate weekly and annual UK care home fees and check what your local council might pay.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caretoolkit.co.uk/care-home-cost-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+
+<!-- GOOGLE SEARCH CONSOLE VERIFICATION - paste verification meta tag here when you have it -->
+<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "UK Care Home Cost Calculator",
+  "description": "Estimate weekly and annual UK care home costs, including local authority contributions under the 2026/27 means test.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a care home cost in the UK in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Average self-funded fees in 2026 are roughly £1,300 per week for residential care and £1,500 per week for nursing care. Dementia care typically costs £1,400 to £1,800 per week. London and the South East are around 20 to 30 percent higher; the North and Wales are typically lower." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the means test threshold for care home funding in England?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In England for 2026/27 the upper capital limit is £23,250 and the lower limit is £14,250. Above £23,250 you self-fund. Between the two limits you pay £1 per week for every £250 of capital. Below £14,250 your capital is ignored, though your income is still assessed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my parent's house counted in the means test?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For permanent residential care, the home is usually counted unless a spouse, civil partner, dependent child, or qualifying relative still lives there. The first 12 weeks are disregarded, and a Deferred Payment Agreement may let the council take a charge on the property instead of forcing a sale." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator include NHS Continuing Healthcare?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. NHS Continuing Healthcare (CHC) is a separate, non-means-tested fund for people with a primary health need. If awarded, the NHS pays the full cost. This calculator estimates the standard self-funded and council-supported scenarios." }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/shared.css">
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="site-header">
+  <a href="/" class="brand-link">
+    <div class="brand">Care Toolkit</div>
+    <div class="brand-sub">Free tools for families navigating elderly care in the UK</div>
+  </a>
+  <nav class="site-nav">
+    <a href="/care-home-cost-calculator/">Care Cost Calculator</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<main>
+<span class="year-tag">Updated for 2026/27 rules</span>
+<h1>UK Care Home Cost Calculator</h1>
+<p class="intro">Get a quick estimate of weekly and annual care home fees, plus how much your local council might contribute based on the means test. No sign-up. No data stored.</p>
+
+<!-- AD SLOT: top of calculator. Switch on after AdSense approval. -->
+<div class="ad-slot">Ad slot (top)</div>
+
+<section class="calc" aria-label="Care cost calculator">
+
+  <div class="field">
+    <label for="country">Where will the care be provided? <span class="hint">— rules differ across the UK</span></label>
+    <select id="country">
+      <option value="england">England</option>
+      <option value="wales">Wales</option>
+      <option value="scotland">Scotland</option>
+      <option value="ni">Northern Ireland</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="careType">Type of care</label>
+    <select id="careType">
+      <option value="residential">Residential care</option>
+      <option value="nursing">Nursing care</option>
+      <option value="dementia-res">Dementia care (residential)</option>
+      <option value="dementia-nurs">Dementia care (nursing)</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="region">Region</label>
+    <select id="region">
+      <option value="london">London</option>
+      <option value="southeast">South East</option>
+      <option value="average" selected>Rest of UK average</option>
+      <option value="north">North of England</option>
+      <option value="walesregion">Wales</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label for="assets">Total assets (£) <span class="hint">— savings + property (if counted)</span></label>
+    <input type="number" id="assets" min="0" step="1000" value="50000" inputmode="numeric">
+  </div>
+
+  <div class="results" id="results" aria-live="polite">
+    <div class="result-headline">
+      <span class="result-label">Estimated weekly cost</span>
+      <span class="result-value" id="weekly">£—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Annual cost</span>
+      <span class="result-value" id="annual">£—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Means-test status</span>
+      <span class="result-value" id="meansStatus" style="font-size: 16px;">—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Likely council contribution</span>
+      <span class="result-value" id="council">£—</span>
+    </div>
+    <div class="result-row">
+      <span class="result-label">Likely you / family contribution</span>
+      <span class="result-value" id="self">£—</span>
+    </div>
+    <div class="status" id="statusMsg"></div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Important:</strong> These figures are estimates based on national averages and the 2026/27 means-test rules. Actual costs depend on the specific home, your full financial picture, and a local authority needs assessment. Always seek advice from a regulated financial adviser specialising in later life or contact <a href="https://www.ageuk.org.uk" target="_blank" rel="noopener" style="color:var(--accent-warm);">Age UK</a> for free guidance before making decisions.
+  </div>
+</section>
+
+<!-- AD SLOT: mid-content. Switch on after AdSense approval. -->
+<div class="ad-slot">Ad slot (mid)</div>
+
+<h2>How UK care home funding works</h2>
+<p>Whether you pay for care yourself, get help from your local council, or qualify for full NHS funding depends on three things: <strong>where you live in the UK</strong>, your <strong>care needs</strong>, and your <strong>finances</strong>.</p>
+
+<h3>The means test (England)</h3>
+<p>Local authorities run a financial assessment using two thresholds, frozen since 2010:</p>
+<p><strong>Above £23,250 in capital:</strong> you fund your own care in full.<br>
+<strong>Between £14,250 and £23,250:</strong> you pay £1 per week for every £250 above the lower limit (called "tariff income"), plus what you can afford from your income.<br>
+<strong>Below £14,250:</strong> your capital is ignored, but your income (pension, etc.) is still assessed.</p>
+
+<h3>What about the house?</h3>
+<p>If your parent moves into a care home permanently, the value of their property is normally counted in the means test. But it is disregarded if a spouse, civil partner, dependent child, or qualifying relative still lives there. The first 12 weeks are also disregarded, and a Deferred Payment Agreement lets the council put a charge on the property rather than force a sale.</p>
+
+<h3>Different rules across the UK</h3>
+<p><strong>Wales</strong> has a single, more generous threshold of £50,000.<br>
+<strong>Scotland</strong> provides free personal care; means-test thresholds are £21,500 (lower) and £35,000 (upper).<br>
+<strong>Northern Ireland</strong> uses the same £14,250 / £23,250 thresholds as England.</p>
+
+<h3>NHS Continuing Healthcare (CHC)</h3>
+<p>If your parent's primary need is a health need rather than a social care one, the NHS may pay for everything regardless of finances. Eligibility is assessed nationally and is notoriously difficult to win — but it is worth requesting an assessment if their needs are complex.</p>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+  <summary>How much does a care home cost per week in the UK?</summary>
+  <p>In 2026, the average self-funded weekly cost is around £1,300 for residential care and £1,500 for nursing care. Dementia care typically runs £1,400–£1,800. London and the South East are 20–30% higher; northern regions and Wales are typically lower.</p>
+</details>
+
+<details>
+  <summary>Will the council pay if my parent has no savings?</summary>
+  <p>If their capital is below £14,250 in England (different in other UK nations) and a needs assessment confirms they require care, the council will fund the placement, though they will use most of your parent's pension and other income towards the cost. Your parent keeps a Personal Expenses Allowance — £31.80 per week in 2026/27.</p>
+</details>
+
+<details>
+  <summary>Can I gift my parent's house to avoid care fees?</summary>
+  <p>No. Local authorities can challenge "deliberate deprivation of assets" and treat the home as if it were still owned. There is no time limit on how far back they can look. Take regulated financial advice before any major asset transfer.</p>
+</details>
+
+<details>
+  <summary>Is there a cap on lifetime care costs?</summary>
+  <p>No. The £86,000 lifetime cap proposed for October 2023 has been delayed indefinitely and is not in force in 2026. Care fees can continue for as long as care is needed.</p>
+</details>
+
+<details>
+  <summary>Does this include Attendance Allowance?</summary>
+  <p>Not in the calculator above. Attendance Allowance (up to £110.40 per week in 2026 for the higher rate) is non-means-tested and can help with care costs at home, but it usually stops if the council is funding a care home placement.</p>
+</details>
+
+<aside class="related">
+  <h3>Other tools you might need</h3>
+  <ul>
+    <li>NHS Continuing Healthcare eligibility checker <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Power of Attorney checklist <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Medication schedule builder <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+    <li>Attendance Allowance eligibility checker <em style="color:var(--ink-soft);font-size:13px;">— coming soon</em></li>
+  </ul>
+</aside>
+
+<p class="last-updated">Last updated: May 2026. Sources: gov.uk social care charging circular 2026/27, carehome.co.uk industry data, Lottie 2026 fees report.</p>
+
+</main>
+
+<footer class="site-footer">
+  <p>Care Toolkit provides general information, not financial or legal advice. Always seek professional guidance before making decisions about a parent's care or finances.</p>
+  <div class="footer-links">
+    <a href="/about/">About</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/contact/">Contact</a>
+  </div>
+</footer>
+
+</div>
+
+<div class="cookie-banner" id="cookie-banner">
+  <div class="cookie-banner-inner">
+    <p>We use cookies to analyse site traffic and serve relevant ads. You can accept or reject these — only essential cookies are used otherwise. <a href="/privacy/">Read our privacy policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn reject" id="cookie-reject">Reject</button>
+      <button class="cookie-btn accept" id="cookie-accept">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/js/shared.js"></script>
+<script>
+const BASE_COSTS = {
+  'residential':   1300,
+  'nursing':       1500,
+  'dementia-res':  1400,
+  'dementia-nurs': 1700
+};
+const REGION_MULT = {
+  'london':      1.30,
+  'southeast':   1.15,
+  'average':     1.00,
+  'north':       0.85,
+  'walesregion': 0.85
+};
+const THRESHOLDS = {
+  'england':  { lower: 14250, upper: 23250 },
+  'ni':       { lower: 14250, upper: 23250 },
+  'wales':    { lower: 50000, upper: 50000 },
+  'scotland': { lower: 21500, upper: 35000 }
+};
+const fmt = (n) => '£' + Math.round(n).toLocaleString('en-GB');
+
+function calculate() {
+  const country  = document.getElementById('country').value;
+  const careType = document.getElementById('careType').value;
+  const region   = document.getElementById('region').value;
+  const assets   = Math.max(0, parseFloat(document.getElementById('assets').value) || 0);
+
+  const weekly = BASE_COSTS[careType] * REGION_MULT[region];
+  const annual = weekly * 52;
+
+  document.getElementById('weekly').textContent = fmt(weekly) + ' / week';
+  document.getElementById('annual').textContent = fmt(annual);
+
+  const t = THRESHOLDS[country];
+  let status = '', councilPay = 0, selfPay = weekly, msg = '';
+
+  if (country === 'wales') {
+    if (assets > t.upper) {
+      status = 'Self-funder';
+      msg = '<strong>You will likely pay the full cost.</strong> Wales uses a single £50,000 capital limit; above this, you self-fund. Below it, the council assesses you on income.';
+    } else {
+      status = 'Council may contribute';
+      councilPay = weekly * 0.5;
+      selfPay = weekly - councilPay;
+      msg = '<strong>Your council may contribute.</strong> Below £50,000 in capital, Wales assesses your income to set the contribution. The split shown is illustrative — request a financial assessment from your local authority.';
+    }
+  } else if (country === 'scotland') {
+    if (assets > t.upper) {
+      status = 'Self-funder (with free personal care)';
+      councilPay = 250;
+      selfPay = weekly - councilPay;
+      msg = '<strong>You self-fund accommodation, but personal care is free in Scotland</strong> (around £250/week contribution). Nursing care also gets a separate NHS payment.';
+    } else if (assets > t.lower) {
+      status = 'Tariff contribution';
+      const tariff = Math.ceil((assets - t.lower) / 250);
+      councilPay = Math.max(0, weekly - tariff - 250);
+      selfPay = weekly - councilPay;
+      msg = `<strong>You contribute a tariff income</strong> of about £${tariff}/week from your capital, plus income, plus accommodation costs. The council covers the rest.`;
+    } else {
+      status = 'Means-tested support';
+      councilPay = weekly * 0.75;
+      selfPay = weekly - councilPay;
+      msg = '<strong>Your capital is below £21,500</strong> — the council will fund most of your care from capital, taking your income into account.';
+    }
+  } else {
+    if (assets > t.upper) {
+      status = 'Self-funder';
+      councilPay = 0;
+      selfPay = weekly;
+      msg = `<strong>You will pay the full cost.</strong> Capital above £${t.upper.toLocaleString()} means no council support, though you may still qualify for Funded Nursing Care or NHS Continuing Healthcare.`;
+    } else if (assets > t.lower) {
+      const tariff = Math.ceil((assets - t.lower) / 250);
+      status = `Partial council support (~£${tariff}/wk tariff)`;
+      councilPay = Math.max(0, weekly - tariff - 100);
+      selfPay = weekly - councilPay;
+      msg = `<strong>You're in the tariff zone.</strong> You pay about £${tariff}/week from capital plus most of your income. The council covers the rest, but only up to its standard rate — top-ups may apply.`;
+    } else {
+      status = 'Council-funded (capital protected)';
+      councilPay = weekly * 0.75;
+      selfPay = weekly - councilPay;
+      msg = `<strong>Your capital is protected.</strong> Below £${t.lower.toLocaleString()}, capital is disregarded. The council pays most of the fee, taking pension and other income (less the £31.80 personal expenses allowance).`;
+    }
+  }
+
+  document.getElementById('meansStatus').textContent = status;
+  document.getElementById('council').textContent = fmt(councilPay) + ' / week';
+  document.getElementById('self').textContent = fmt(selfPay) + ' / week';
+  document.getElementById('statusMsg').innerHTML = msg;
+}
+
+['country','careType','region','assets'].forEach(id => {
+  document.getElementById(id).addEventListener('input', calculate);
+  document.getElementById(id).addEventListener('change', calculate);
+});
+calculate();
+</script>
+</body>
+</html>
